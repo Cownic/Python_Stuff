@@ -1,5 +1,5 @@
 # Learning how to use f' to do string concentenation in python
-
+from sample_madlibs import zombie
 name = input("Please enter your name: ")
 
 print(f"Hello, Welcome to Madlib, {name}")
@@ -9,7 +9,4 @@ adverb=input("Please enter a adverb: ")
 noun=input("Please enter a noun below: ")
 adjective=input("Please enter a adjective below: ")
 
-phase = f'{exclaimation} ! he said {adverb} as he jumped into his convertible {noun} and drove off with his wife'
-
-print(phase)
-  
+zombie.note(exclaimation,adverb,noun,adjective)
