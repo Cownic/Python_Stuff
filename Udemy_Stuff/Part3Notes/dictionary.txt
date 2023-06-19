@@ -1,0 +1,13 @@
+Dictionary is an unordered collection of key-value pair
+Dictionary are mutable
+To create a dictionary, we use var_name = {} // empty dictionary
+To obtain value, we can use the key to index into the dictionary : dict[key] = value
+To add a key-value pair, we just -> dict[new-key] = new-value
+We need to be careful of aliasing, when we assign one dict to another dict, changes will be made to both copies
+
+del : removes a key-value pair from the dictionary -> del dict[key]
+len : check the number of key-value pair -> len(dict)
+keys : return a view of the keys in the directionary -> dict.keys()
+values : return a view of the values in the directionary -> dict.values()
+items : Returns a view of the key-value pairs in the dictionary -> dict.items()
+get :  Returns the value associated with key; None otherwise -> dict.get(key)

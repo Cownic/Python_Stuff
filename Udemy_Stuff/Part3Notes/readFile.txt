@@ -1,0 +1,31 @@
+FILES (.txt & .csv)
+
+- Ways to open the file for processing
+
+file_variable = open(filename,'r')   | Open a file called filename and use it for reading. This will return a reference to a file object.
+
+file_variable = open(filename,'w')   | Open a file called filename and use it for writing. This will also return a reference to a file object.
+
+file_variable.close()                | File use is complete.
+
+with open (filename , mode) as file_variable: --> automatically close when done
+
+- Different waays to write to the file
+
+file_variable.write(a_string)        | Add a string to the end of the file. file_variable must refer to a file that has been opened for writing.
+
+- Different ways to read the file
+
+file_variable.read(n)                | Read and return a string of n characters, or the entire file as a single string if n is not provided.
+
+file_variable.readline()             | Read and return the next line of the file with all text up to and including the newline character. If n is provided as a parameter, then only n characters will be returned if the line is longer than n
+
+file_variable.readlines()            | Returns a list of strings, each representing a single line of the file. If n is not provided then all lines of the file are returned. If n is provided then n characters are read but n is rounded up so that an entire line is returned.
+
+- Recipe for Reading and processing file
+fname = "yourfile.txt"
+with open(fname, 'r') as fileref:         # step 1
+    lines = fileref.readlines()           # step 2
+    for lin in lines:                     # step 3
+        #some code that references the variable lin
+#some other code not relying on fileref   # step 4

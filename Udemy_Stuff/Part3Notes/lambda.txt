@@ -1,0 +1,6 @@
+def func(args):
+    return ret_val
+
+lambda version:
+func = lambda args:ret_val
+* having a name func is optional, can make it a anonymous function

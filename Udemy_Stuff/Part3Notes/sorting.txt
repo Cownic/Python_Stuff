@@ -1,0 +1,6 @@
+either use:
+l.sort()
+sorted(l , reverse=True, key=absolute / lambda x:absolute(x)) // only first parameter is compulsory
+
+sorting dictionary by keys : sorted(dict)
+sorting dictionary by value: sorted(dict.items, reverse=True, key= lambda item: item[1]) // item 1 is the value in key-value pair

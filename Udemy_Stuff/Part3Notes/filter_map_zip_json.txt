@@ -1,0 +1,33 @@
+ZIP FUNCTION:
+The zip() function returns a zip object, which is an iterator of tuples where the first item in each passed iterator is paired together, and then the second item in each passed iterator are paired together etc.
+If the passed iterators have different lengths, the iterator with the least items decides the length of the new iterator.
+==============================================================
+a = ("John", "Charles", "Mike")
+b = ("Jenny", "Christy", "Monica")
+x = zip(a, b)
+==============================================================
+
+MAP FUNCTION:
+The map() function executes a specified function for each item in an iterable. The item is sent to the function as a parameter.
+==============================================================
+def myfunc(n):
+  return len(n)
+x = map(myfunc, ('apple', 'banana', 'cherry'))
+==============================================================
+
+FILTER FUNCTION:
+The filter() method filters the given sequence with the help of a function that tests each element in the sequence to be true or not. 
+==============================================================
+filter(function, sequence)
+Parameters:
+
+function: function that tests if each element of a 
+sequence true or not.
+
+sequence: sequence which needs to be filtered, it can 
+be sets, lists, tuples, or containers of any iterators.
+
+Returns:
+
+returns an iterator that is already filtered.
+==============================================================
