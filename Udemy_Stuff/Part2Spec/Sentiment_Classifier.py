@@ -53,8 +53,6 @@ if __name__=="__main__":
             row_list.append(positive_count - negative_count)
             result_list.append(row_list)
 
-
-
     with open ('resulting_data.csv' , 'w') as input_file:
         csvwriter = csv.writer(input_file)
         csvwriter.writerow(fields)
