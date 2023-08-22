@@ -7,7 +7,7 @@ VOWEL_COST = 250
 LETTERS = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
 VOWELS = 'AEIOU'
 
-sys.setExecutionLimit(600000) # let this take up to 10 minutes
+#sys.setExecutionLimit(600000) # let this take up to 10 minutes
 
 # Write the WOFPlayer class definition (part A) here
 class WOFPlayer():
